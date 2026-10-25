@@ -21,9 +21,11 @@
   text-decoration: none;
 }
 
-.app-id > span { display: flex; flex-direction: column; min-width: 0; }
+.app-id > div { display: flex; flex-direction: column; min-width: 0; }
 
 .app-name {
+  max-width: none;
+  margin: 0;
   font-size: 24px;
   font-weight: 800;
   letter-spacing: -0.02em;
@@ -52,7 +54,7 @@
   line-height: 1.2;
 }
 
-.prose h1 { margin-top: 0.4em; font-size: clamp(32px, 5vw, 44px); font-weight: 800; }
+.prose h1 { max-width: none; margin-top: 0.4em; font-size: clamp(32px, 5vw, 44px); font-weight: 800; }
 
 .prose h2 {
   padding-top: 0.4em;
@@ -142,6 +144,8 @@
 .prose img { max-width: 100%; height: auto; border-radius: 12px; }
 
 .prose hr { margin: 2.4em 0; border: 0; border-top: 1px solid var(--border); }
+
+.prose hr + h2 { margin-top: 0; padding-top: 0; border-top: 0; }
 
 .footer span { display: inline-flex; flex-wrap: wrap; gap: 6px; }
 

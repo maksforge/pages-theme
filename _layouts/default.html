@@ -58,6 +58,9 @@
         {%- if app.play %}
         <a class="btn small primary" href="{{ app.play }}">Google Play</a>
         {%- endif %}
+        {%- if app.chrome %}
+        <a class="btn small primary" href="{{ app.chrome }}">Chrome Web Store</a>
+        {%- endif %}
         <a class="btn small ghost" href="{{ site.github.repository_url }}">Source</a>
       </div>
     </section>
